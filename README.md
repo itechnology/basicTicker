@@ -5,7 +5,7 @@
 
 **Try it**
 
-* [DEMO](http://itechnology.github.com/jQuery.basicTicker/)
+* [DEMO](http://itechnology.github.com/basicTicker/)
 
 **Signature**
 

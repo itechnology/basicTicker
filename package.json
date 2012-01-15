@@ -20,7 +20,7 @@
         "jquery",
         "ticker"
     ],
-    "homepage": "https://github.com/itechnology/jQuery.basicTicker",
+    "homepage": "https://github.com/itechnology/basicTicker",
     "maintainers": [
         {
             "name": "Robert Hoffmann",
@@ -28,6 +28,6 @@
         }
     ],
     "files": [
-        "src/jQuery.basicTicker.js"
+        "src/basicTicker.js"
     ]
 }

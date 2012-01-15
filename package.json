@@ -28,6 +28,6 @@
         }
     ],
     "files": [
-        "src/basicTicker.js"
+        "src/jquery.basicTicker.js"
     ]
 }

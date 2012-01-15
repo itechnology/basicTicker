@@ -1,0 +1,33 @@
+{
+    "name": "jQuery.basicTicker",
+    "version": "1.0.1",
+    "title": "jQuery.basicTicker()",
+    "author": {
+        "name": "Robert Hoffmann",
+        "url": "https://github.com/itechnology"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "A really simple ticker",
+    "keywords": [
+        "jquery",
+        "ticker"
+    ],
+    "homepage": "https://github.com/itechnology/jQuery.basicTicker",
+    "maintainers": [
+        {
+            "name": "Robert Hoffmann",
+            "url": "https://github.com/itechnology"
+        }
+    ],
+    "files": [
+        "src/jQuery.basicTicker.js"
+    ]
+}

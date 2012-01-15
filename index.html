@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>jQuery.basicTicker()</title>
+    <style>
+        /******************************************
+         * Extra stuff used just in this demo page
+         ******************************************/
+        body {
+            margin: 50px auto;
+            width : 720px;
+        }
+        .container {
+            border: 1px solid black;
+            margin: 2px;
+        }
+        .done {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="src/jQuery.basicTicker.js"></script>
+</head>
+<body>
+    <h1>jQuery.basicTicker()</h1>
+
+    <h5>Simple CallBack</h5>
+    <div>
+        <div class="container">
+            <div id="basicTicker1" style="display:none"></div>
+        </div>
+        <pre>
+            jQuery("#basicTicker1").basicTicker(["Some text 1", "Some text 2", "Some text 3"], 1500, function(ele) {
+                jQuery(ele).html("&lt;span class='done'&gt;All done: basicTicker1&lt;/span&gt;").show(0);
+            });
+        </pre>
+    </div>
+
+    <h5>Event Binding</h5>
+    <div>
+        <div class="container">
+            <div id="basicTicker2" style="display:none"></div>
+        </div>
+        <pre>
+            jQuery("#basicTicker2").basicTicker(["Some text 1", "Some text 2", "Some text 3"], 2000);
+            jQuery("#basicTicker2").bind("ticker:done", function(e) {
+                jQuery(e.target).html("&lt;span class='done'&gt;All done: basicTicker2&lt;/span&gt;").show(0);
+            });
+        </pre>
+    </div>
+    
+    <a href="https://github.com/itechnology/jQuery.basicTicker">Source on Github</a>
+
+    <script>
+        jQuery(document).ready(function() {
+            jQuery("#basicTicker1").basicTicker(["Some text 1", "Some text 2", "Some text 3"], 1500, function(ele) {
+                jQuery(ele).html("<span class='done'>All done: basicTicker1</div>").show(0);
+            });
+
+            jQuery("#basicTicker2").basicTicker(["Some text 1", "Some text 2", "Some text 3"], 2000);
+            jQuery("#basicTicker2").bind("ticker:done", function(e) {
+                jQuery(e.target).html("<span class='done'>All done: basicTicker2</span>").show(0);
+            });
+        });
+    </script>
+</body>
+</html>

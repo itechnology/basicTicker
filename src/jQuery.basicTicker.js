@@ -26,13 +26,13 @@
         callBack = callBack || function(e) { };
 
         if (!$.isArray(data)) {
-            return;
+            return this;
         }
 
         var that = this;
 
         // replace fadeIn/Out with slideUp/Down, Show/Hide, etc ...
-        function tick(data, duration) {
+        function tick(data) {
             var item = data.splice(0, 1)[0];
 
             that
@@ -49,7 +49,7 @@
                 });
         }
 
-        tick(data, duration);
+        tick(data);
         return that;
     };
 })(jQuery);

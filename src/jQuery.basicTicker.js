@@ -23,23 +23,23 @@
  **************************/
 (function($, undefined) {
     $.fn.basicTicker = function(data, duration, callBack) {
-        callBack = callBack || function(e) { };
+        callBack = callBack || function() {};
 
-        if (!$.isArray(data)) {
+        if (!$.isArray(data) || data.length === 0) {
             return this;
         }
 
         var that = this;
 
         // replace fadeIn/Out with slideUp/Down, Show/Hide, etc ...
-        function tick(data) {
-            var item = data.splice(0, 1)[0];
+        function tick(items) {
+            var item = items.splice(0, 1)[0];
 
             that
                 .text(item)
                 .fadeIn(duration)
                 .fadeOut(duration, function() {
-                    if (data.length > 0) {
+                    if (items.length > 0) {
                         tick(data, duration);
                     }
                     else {

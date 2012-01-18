@@ -26,6 +26,9 @@
         callBack = callBack || function() {};
 
         if (!$.isArray(data) || data.length === 0) {
+            callBack(this);
+            $(this).triggerHandler("ticker:done");
+
             return this;
         }
 

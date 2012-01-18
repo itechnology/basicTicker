@@ -43,7 +43,7 @@
                 .fadeIn(duration)
                 .fadeOut(duration, function() {
                     if (items.length > 0) {
-                        tick(data, duration);
+                        tick(items, duration);
                     }
                     else {
                         callBack(that);

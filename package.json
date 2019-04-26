@@ -13,7 +13,7 @@
         }
     ],
     "dependencies": {
-        "jquery": "1"
+        "jquery": ">=3.4.0"
     },
     "description": "A really simple ticker",
     "keywords": [
